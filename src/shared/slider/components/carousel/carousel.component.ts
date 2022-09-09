@@ -15,16 +15,16 @@ export class CarouselComponent implements OnInit {
 
     public carouselItemList: Array<Carousel> = [
         {
-            url: "/assets/images/banner.png"
+            url: "assets/images/banner.png"
         },
         {
-            url: "/assets/images/banner.png"
+            url: "assets/images/banner.png"
         },
         {
-            url: "/assets/images/banner.png"
+            url: "assets/images/banner.png"
         },
         {
-            url: "/assets/images/banner.png"
+            url: "assets/images/banner.png"
         }
     ]
 
