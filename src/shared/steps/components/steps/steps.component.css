@@ -1,0 +1,68 @@
+:host {
+    height: 445px;
+    width: 100%;
+    display: block;
+    background-image: url(../../../../assets/images/steps-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 155px;
+    height: 154px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container {
+    position: relative;
+    min-width: 1412px;
+
+}
+
+.header {
+    position: absolute;
+    top: 55px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Quicksand";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.col {
+    width: calc(100% / 11);
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    right: -7px;
+}
+
+.icon {
+    width: 154px;
+}
+
+.icon-description {
+    margin-top: 5rem;
+    bottom: -75px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 16px;
+        font-weight: bold;
+        line-height: 1.248;
+    text-align: center;
+    width: 100%;
+}
+
+.steps-icon-2-arrow {
+    position: absolute;
+    top: 40px;
+    left: 34px;
+}

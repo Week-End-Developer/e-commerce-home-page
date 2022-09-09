@@ -1,0 +1,56 @@
+<div class="container h-100">
+        <div class="w-100 h-100 flex-center">
+
+                <div class="swiper-container flex-center w-100">
+                        <div class="brands-arrow" (click)="onPrevClick()">
+                                <svg class="current" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="20px">
+                                        <image x="0px" y="0px" width="12px" height="20px"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAMAAACOLiwjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEX///+dnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZz////B+Yf0AAAANHRSTlMAKsObCinXmiTU0NHgNCHS4yDM5Doe6DscyOxCG8dEvetBNjglNyfWMd0w3NsoL9/iqq8RoZJQ8gAAAAFiS0dEAIgFHUgAAAAHdElNRQfmCQgOEQ8NlQsqAAAAiElEQVQY0zXP5xKCQAxG0cUOgg1FwY4FBcWW9382v4Rkf507s7PJOqfHa7U75m6PqK8e+EQUqIdwGIlHY3jSeDqD47l4wU6W4lUKZ2vxZsveNQ/t4cNRJ/ClJLdx/Gx80jpLXbSuBY+/2cJYku6lrVyhKk+rfKCKp1b9QqX2uehN9LFwuf/9/QEE1xFh5SQBHwAAAABJRU5ErkJggg==" />
+                                </svg>
+
+                                <svg class="hovered" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="20px">
+                                        <image x="0px" y="0px" width="12px" height="20px"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAMAAACOLiwjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEX///8AlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkD///9M0erUAAAANHRSTlMAKsObCinXmiTU0NHgNCHS4yDM5Doe6DscyOxCG8dEvetBNjglNyfWMd0w3NsoL9/iqq8RoZJQ8gAAAAFiS0dEAIgFHUgAAAAHdElNRQfmCQgOEgHBAHXuAAAAiElEQVQY0zXP5xKCQAxG0cUOgg1FwY4FBcWW9382v4Rkf507s7PJOqfHa7U75m6PqK8e+EQUqIdwGIlHY3jSeDqD47l4wU6W4lUKZ2vxZsveNQ/t4cNRJ/ClJLdx/Gx80jpLXbSuBY+/2cJYku6lrVyhKk+rfKCKp1b9QqX2uehN9LFwuf/9/QEE1xFh5SQBHwAAAABJRU5ErkJggg==" />
+                                </svg>
+                        </div>
+
+                        <swiper [config]="config" #swiper>
+
+                                <ng-template swiperSlide style="width: 162px !important;"><img
+                                                src="/assets/images/brand-1.png" alt="" class="brand-1"></ng-template>
+                                <ng-template swiperSlide style="width: 162px !important;"><img
+                                                src="/assets/images/brand-2.png" alt="" class="brand-2"></ng-template>
+                                <ng-template swiperSlide style="width: 162px !important;"><img
+                                                src="/assets/images/brand-3.png" alt="" class="brand-3"></ng-template>
+                                <ng-template swiperSlide style="width: 162px !important;"><img
+                                                src="/assets/images/brand-4.png" alt="" class="brand-4"></ng-template>
+                                <ng-template swiperSlide style="width: 162px !important;"><img
+                                                src="/assets/images/brand-5.png" alt="" class="brand-5"></ng-template>
+                                <ng-template swiperSlide style="width: 162px !important;"><img
+                                                src="/assets/images/brand-6.png" alt="" class="brand-6"></ng-template>
+                                <ng-template swiperSlide style="width: 162px !important;"><img
+                                                src="/assets/images/brand-7.png" alt="" class="brand-7"></ng-template>
+                                <ng-template swiperSlide style="width: 162px !important;"><img
+                                                src="/assets/images/brand-8.png" alt="" class="brand-8"></ng-template>
+                                <ng-template swiperSlide style="width: 162px !important;"><img
+                                                src="/assets/images/brand-9.png" alt="" class="brand-9"></ng-template>
+                        </swiper>
+
+                        <div class="brands-arrow text-right" style="justify-content: right;" (click)="onNextClick()">
+                                <svg class="current" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="20px">
+                                        <image x="0px" y="0px" width="12px" height="20px"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAMAAACOLiwjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEX///+dnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZydnZz////B+Yf0AAAANHRSTlMACpvDKprXKdDUJDTg0ePSITrkzCA76B5C7MgcRMcbQeu9Njg3JTHWJzDd3Cjb3y+q4hGvQrjoDwAAAAFiS0dEAIgFHUgAAAAHdElNRQfmCQgOGQ6yS7G0AAAAh0lEQVQY0z3PWwOBQBCG4ZCoECKsQ+RQydn8/9/mm51Ze/U+Fzs767XaHd9zp0sU9Bz6RBRGingADf8aQclYNZlC6Uw1z1gL1XIFmbVqw9ruVPkeOigKvmakjzwwkcdOts+2L7xEWdmur+hAVvcbdCOL30r0vZZBBv146gsvonfsPvf5hoXrHxbrEWjIbG/IAAAAAElFTkSuQmCC" />
+                                </svg>
+
+                                <svg class="hovered" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="20px">
+                                        <image x="0px" y="0px" width="12px" height="20px"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAMAAACOLiwjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEX///8AlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkAAlkD///9M0erUAAAANHRSTlMACpvDKprXKdDUJDTg0ePSITrkzCA76B5C7MgcRMcbQeu9Njg3JTHWJzDd3Cjb3y+q4hGvQrjoDwAAAAFiS0dEAIgFHUgAAAAHdElNRQfmCQgOGSfw+SnYAAAAh0lEQVQY0z3PWwOBQBCG4ZCoECKsQ+RQydn8/9/mm51Ze/U+Fzs767XaHd9zp0sU9Bz6RBRGingADf8aQclYNZlC6Uw1z1gL1XIFmbVqw9ruVPkeOigKvmakjzwwkcdOts+2L7xEWdmur+hAVvcbdCOL30r0vZZBBv146gsvonfsPvf5hoXrHxbrEWjIbG/IAAAAAElFTkSuQmCC" />
+                                </svg>
+                        </div>
+                </div>
+        </div>
+</div>

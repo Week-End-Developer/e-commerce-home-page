@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --green-1: #009640;
+    --white: #ffffff;
+}
+
+@import '../../../../../node_modules/swiper/swiper.scss';
+
+* {
+    font-family: "Quicksand", Arial, Helvetica, sans-serif !important;
+  }
+
+.text-green-1 {
+    color: var(--green-1);
+}
+
+::selection {
+    background: transparent;
+}
+
+
+.mr-2 {
+    margin-right: .25rem;
+}
+.mr-3 {
+    margin-right: .5rem;
+}
+.mr-4 {
+    margin-right: 1rem;
+}
+
+.ml-2 {
+    margin-left: .25rem;
+}
+.ml-3 {
+    margin-left: .5rem;
+}
+.ml-4 {
+    margin-left: 1rem;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
+.text-right {
+    text-align: right;
+    text-align: -webkit-right;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.form-control:focus {
+    color: inherit !important;
+    /* background-color: inherit !important; */
+    border-color: unset !important;
+    outline: unset !important;
+    outline-color: unset !important;
+    outline-style: unset !important;
+    outline-width: 0px;
+    box-shadow: unset !important;
+}
+
+input.form-control:focus {
+    border: transparent;
+    border-width: 2px !important;
+    border-color: rgb(220, 220, 220) !important;
+    border-style: solid !important;
+    border-left: unset !important;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+    transition-property: transform;
+    height: 48px !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

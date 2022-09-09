@@ -1,0 +1,39 @@
+:host {
+    background-color: #fff;
+    height: 292px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: bold;
+    color: #575756;
+}
+
+li:first-child {
+    color: var(--green-1);
+    font-size: 17px;
+    font-weight: 800;
+    cursor: unset;
+}
+
+li {
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+img {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1412px;
+}

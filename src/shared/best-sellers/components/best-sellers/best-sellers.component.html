@@ -1,0 +1,206 @@
+<div class="container">
+    <div class="col">
+        <div class="row">
+            <div class="col text-center">
+                <div class="header">
+                    Çok Satanlar
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" style="margin-bottom: 24px;" *ngFor="let item of productList">
+                <div class="card">
+                    <div class="row card-image">
+                        <div class="col flex-center">
+                            <img [src]="item.url" alt="logo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col card-description">
+                            {{item.name}}
+                        </div>
+                    </div>
+                    <div class="row card-bottom flex-center">
+                        <div class="col-6">
+                            {{item.price}}
+                        </div>
+                        <div class="col-6 text-right">
+
+                            <div (mouseleave)="item.activeCount = false" *ngIf="item.activeCount"
+                                class="product-count-wrapper flex-center">
+                                <div class="product-count-wrapper-icon product-count-wrapper-icon-minus"
+                                    (click)="onDecreaseClick(item)">-</div>
+                                <div class="flex-center" style="width: 45px;color: black;">
+                                    {{item.count}}
+                                </div>
+                                <div class="product-count-wrapper-icon product-count-wrapper-icon-plus"
+                                    (click)="onIncreaseClick(item)">+</div>
+                            </div>
+
+                            <div *ngIf="!item.activeCount" class="img-wrapper flex-center cursor-pointer"
+                                (mouseenter)="item.count != undefined && item.count > 0 ? item.activeCount= true : item.activeCount = item.activeCount"
+                                (click)="item.activeCount = true; item.count == undefined ? item.count = 0 : item.count = item.count">
+                                <img class="chart-image" src="/assets/images/add-to-cart-icon.png" alt=""
+                                    style="margin-left: -2px;position: relative;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-3" style="margin-bottom: 24px;">
+                <div class="card">
+                    <div class="row card-image">
+                        <div class="col flex-center">
+                            <img src="/assets/images/best-sellers-item-1.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col card-description">
+                            Nutella Biscuits 304g
+                        </div>
+                    </div>
+                    <div class="row card-bottom flex-center">
+                        <div class="col-6">
+                            6,00 €
+                        </div>
+                        <div class="col-6 text-right">
+                            <img src="/assets/images/add-to-cart-icon.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3" style="margin-bottom: 24px;">
+                <div class="card">
+                    <div class="row card-image">
+                        <div class="col flex-center">
+                            <img src="/assets/images/best-sellers-item-1.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col card-description">
+                            Nutella Biscuits 304g
+                        </div>
+                    </div>
+                    <div class="row card-bottom flex-center">
+                        <div class="col-6">
+                            6,00 €
+                        </div>
+                        <div class="col-6 text-right">
+                            <img src="/assets/images/add-to-cart-icon.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3" style="margin-bottom: 24px;">
+                <div class="card">
+                    <div class="row card-image">
+                        <div class="col flex-center">
+                            <img src="/assets/images/best-sellers-item-1.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col card-description">
+                            Nutella Biscuits 304g
+                        </div>
+                    </div>
+                    <div class="row card-bottom flex-center">
+                        <div class="col-6">
+                            6,00 €
+                        </div>
+                        <div class="col-6 text-right">
+                            <img src="/assets/images/add-to-cart-icon.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="row card-image">
+                        <div class="col flex-center">
+                            <img src="/assets/images/best-sellers-item-1.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col card-description">
+                            Nutella Biscuits 304g
+                        </div>
+                    </div>
+                    <div class="row card-bottom flex-center">
+                        <div class="col-6">
+                            6,00 €
+                        </div>
+                        <div class="col-6 text-right">
+                            <img src="/assets/images/add-to-cart-icon.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="row card-image">
+                        <div class="col flex-center">
+                            <img src="/assets/images/best-sellers-item-1.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col card-description">
+                            Nutella Biscuits 304g
+                        </div>
+                    </div>
+                    <div class="row card-bottom flex-center">
+                        <div class="col-6">
+                            6,00 €
+                        </div>
+                        <div class="col-6 text-right">
+                            <img src="/assets/images/add-to-cart-icon.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="row card-image">
+                        <div class="col flex-center">
+                            <img src="/assets/images/best-sellers-item-1.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col card-description">
+                            Nutella Biscuits 304g
+                        </div>
+                    </div>
+                    <div class="row card-bottom flex-center">
+                        <div class="col-6">
+                            6,00 €
+                        </div>
+                        <div class="col-6 text-right">
+                            <img src="/assets/images/add-to-cart-icon.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="row card-image">
+                        <div class="col flex-center">
+                            <img src="/assets/images/best-sellers-item-1.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col card-description">
+                            Nutella Biscuits 304g
+                        </div>
+                    </div>
+                    <div class="row card-bottom flex-center">
+                        <div class="col-6">
+                            6,00 €
+                        </div>
+                        <div class="col-6 text-right">
+                            <img src="/assets/images/add-to-cart-icon.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>

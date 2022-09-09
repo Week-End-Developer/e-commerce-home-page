@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="col">
+        <div class="row" style="position: relative;">
+            <div class="col text-center">
+                <div class="header">
+                    Kategoriler
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex">
+                <app-categories-side-bar (onSelectChange)="onSelectCategory($event)"></app-categories-side-bar>
+                <app-categories-product-list #productListComponent></app-categories-product-list>
+            </div>
+        </div>
+    </div>
+</div>

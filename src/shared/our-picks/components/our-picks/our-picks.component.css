@@ -1,0 +1,47 @@
+:host {
+    height: 850px;
+    width: 100%;
+    display: block;
+    background-color: #f5f5f5;
+}
+
+.card {
+    border-radius: 20px;
+    border: unset !important;
+}
+
+.container {
+    min-width: 1700px;
+    border: unset !important;
+}
+
+.card-desciption-rectangle {
+    border-radius: 17px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 290px;
+    height: 90px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: calc(-90px / 2);
+    color: rgb(87, 87, 86);
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.769;
+}
+
+
+.header {
+    margin-bottom: 2.5rem;
+    font-size: 30px;
+    color: var(--green-1);
+    font-weight: bold;
+    line-height: 1.415;
+}
+
+
+  
+
+  

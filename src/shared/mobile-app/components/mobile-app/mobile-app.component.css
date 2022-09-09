@@ -1,0 +1,22 @@
+:host {
+    background-color: #fff;
+    height: 600px;
+    display: block;
+    background-image: url(../../../../assets/images/mobile-app-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    font-size: 30px;
+    color: var(--green-1);
+    font-weight: 700;
+}
+
+.description {
+    font-size: 18px;
+    color: rgb(87, 87, 86);
+    line-height: 1;
+    line-height: 24px;
+    font-weight: 600;
+}
